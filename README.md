@@ -12,8 +12,8 @@ void loop() {   // run over and over
 
   if (Serial.available() > 0) {
     while (Serial.available() > 0) {
-      msg += char(Serial.read());
-      delay(100);
+      msg += char(Serial.read());   // appned char to string
+      delay(100);   // wait 100ms
     }
     // Print the message received from your phone:
     Serial.println(msg);
